@@ -34,6 +34,7 @@ class Timer extends Component {
 
   resetTimer() {
     this.api.send('reset');
+    this.setState({ seconds: 0 });
   }
 
   pauseTimer() {

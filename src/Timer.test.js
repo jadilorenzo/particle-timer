@@ -87,9 +87,12 @@ it('resets timer', () => {
   const fakeApi = new FakeApi();
   wrap.instance().api = fakeApi;
 
+  wrap.setState({ seconds: 1 });
+
   wrap.find('#resetTimer').simulate('click');
 
   expect(fakeApi.lastCommand).toEqual('reset');
+  expect(wrap.state('seconds')).toEqual(0);
 })
 
 it('pauses timer', () => {
