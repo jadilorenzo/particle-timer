@@ -2,7 +2,7 @@ import 'whatwg-fetch';
 
 const DEVICE_ID = '<DEVICE_ID_HERE>';
 const URL = `https://api.particle.io/v1/devices/${DEVICE_ID}/setCountdown`;
-const ACCESS_TOKEN = '<ACCESS_TOKEN_HERE>';
+const ACCESS_TOKEN = '<TOKEN_HERE>';
 
 export default class Api {
   send(command) {
