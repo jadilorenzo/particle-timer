@@ -60,18 +60,20 @@ class Timer extends Component {
     return (
       <div>
         <h1>Timer {this.state.title}</h1>
-        <h2>{this.timecode()}</h2>
-        <div>
+        <div className="actions">
           <button id="addMinute" onClick={this.addMinute.bind(this)}>+1m</button>
           <button id="addHalfMinute" onClick={this.addHalfMinute.bind(this)}>+30s</button>
           <button id="addQuarterMinute" onClick={this.addQuarterMinute.bind(this)}>+15s</button>
         </div>
-        <div>
+            <h2>{this.timecode()}</h2>
+
+        <div className="actions">
           <button id="startTimer" onClick={this.startTimer.bind(this)}>Start</button>
           <button id="resetTimer" onClick={this.resetTimer.bind(this)}>Reset</button>
           <button id="pauseTimer" onClick={this.pauseTimer.bind(this)}>Pause</button>
           <button id="resumeTimer" onClick={this.resumeTimer.bind(this)}>Resume</button>
-        </div>
+            </div>
+            
       </div>
     );
   }

@@ -12,3 +12,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+html {
+    background-color: #2C3849;
+    color: white;
+    font-family: avenir;
+}
+
+button {
+    margin: 10px;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: white;
+    border: red;
+}
+
+button:hover {
+    background-color: rgb(200, 200, 200);;
+    border: red;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+}
+h1 {
+    text-align: center;
+}
+
+.actions {
+    background-color: rgb(5, 142, 255);
+    margin: 0 auto;
+    display: table;
+    border-radius: 10px;
+}
